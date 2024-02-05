@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <link rel="stylesheet" href="Style.css">
+    <script src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs" type="module"></script> 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.7.9/lottie.min.js"></script>
+    <script type="text/javascript" src="Script.js"></script> 
+</head>
+<body>
+    <div class="video-container">
+        <video autoplay loop muted>
+            <source src="video.mp4" type="video/mp4">
+            <!-- Aggiungi qui ulteriori formati video compatibili con i browser -->
+        </video>
+    </div>
+    <div class = "container">
+        <div class = "mainBox">
+            <div class = "firstBox">
+                <form>
+                    <p class="title">Login</p>
+                    <div class="text">
+                        <p class="inputTitle">Doesn't have an account yet? <a href="Register/Register.html"><span class = "textButton"> Sign Up</span></p></a>
+                    </div>
+                    <div class = "imputs">
+                        <p class="inputTitle">Email</p>
+                        <input id = "email" name="email" type="text" placeholder="Enter Email">
+                        <p class="inputTitle">Password</p>
+                        <input id = "password" name="password" type="password" placeholder="Enter Password">  
+                        <div class = "button">
+                            <input class = "button" type="submit" value="Login" onclick="Login()">
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="secondBox">
+                <div class = "animationBox">
+                    <dotlottie-player id = "logo" class = "video" src="logoLottie.json" background="transparent" speed="0.9" loop autoplay></dotlottie-player>
+                </div>
+            </div>
+            <div id="loadingBox">
+            
+            </div>
+        </div>
+    </div>
+</body>
+</html>
